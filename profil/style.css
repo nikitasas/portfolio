@@ -1,0 +1,109 @@
+body {
+  font-family: 'Arial', sans-serif; /* Use a specific font for consistency */
+  margin: 0; /* Remove default body margins */
+  line-height: 1.6; /* Improve readability */
+  background-color: #f4f4f4; /* Light grey background */
+  color: #333; /* Dark grey text */
+}
+
+header {
+  background-color: #333; /* Dark header */
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-top: 1em;
+  margin-bottom: 0.5em;
+  color: #333; /* Darker text for headings */
+}
+
+section {
+  max-width: 800px; /* Limit section width for better readability */
+  margin: 20px auto; /* Center sections */
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+  border-radius: 5px;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: #333;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition on hover */
+}
+
+button:hover {
+  background-color: #555;
+}
+
+footer {
+  text-align: center;
+  padding: 10px 0;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
+
+/* Modal Styles (Improved) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%; /* Wider modal */
+  max-width: 600px; /* Max width for responsiveness */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: black;
+}
+
+
+/* Responsive Design (Media Queries) -  Add more as needed */
+@media (max-width: 768px) {
+  section {
+    max-width: 95%; /* Make sections nearly full-width on smaller screens */
+    margin: 10px;
+  }
+  .modal-content {
+    width: 90%; /* Even wider on smaller screens */
+    max-width: 400px;
+  }
+}
